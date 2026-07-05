@@ -1,0 +1,90 @@
+{
+  "name": "react-native-image-editor-skia",
+  "version": "0.1.0",
+  "description": "A Skia-powered image annotation & editing component for React Native (draw circles, arrows, markers, freehand, text; crop, resize, free-angle rotate; base64 in/out).",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "test": "jest",
+    "clean": "del-cli lib",
+    "prepublishOnly": "npm run typecheck",
+    "prepack": "bob build"
+  },
+  "keywords": [
+    "react-native",
+    "skia",
+    "image-editor",
+    "annotation",
+    "crop",
+    "draw",
+    "canvas",
+    "base64"
+  ],
+  "license": "MIT",
+  "author": "NG JUN KAI <jzng436@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/react-native-image-editor-skia.git"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/react-native-image-editor-skia#readme",
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/react-native-image-editor-skia/issues"
+  },
+  "peerDependencies": {
+    "@shopify/react-native-skia": ">=2.6.0",
+    "react": "*",
+    "react-native": "*",
+    "react-native-gesture-handler": ">=2.0.0",
+    "react-native-reanimated": ">=3.6.0",
+    "react-native-worklets": "*"
+  },
+  "peerDependenciesMeta": {
+    "react-native-worklets": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@react-native/babel-preset": "^0.81.6",
+    "@react-native/eslint-config": "^0.81.0",
+    "@shopify/react-native-skia": "^2.6.6",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^19.0.0",
+    "del-cli": "^5.1.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "react": "19.1.0",
+    "react-native": "0.81.0",
+    "react-native-builder-bob": "^0.30.0",
+    "react-native-gesture-handler": "^2.20.0",
+    "react-native-reanimated": "^4.0.0",
+    "react-native-worklets": "^0.6.0",
+    "typescript": "^5.5.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib/"
+    ]
+  }
+}
