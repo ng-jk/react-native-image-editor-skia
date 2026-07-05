@@ -36,11 +36,11 @@
   "author": "NG JUN KAI <jzng436@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/react-native-image-editor-skia.git"
+    "url": "git+https://github.com/ng-jk/react-native-image-editor-skia.git"
   },
-  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/react-native-image-editor-skia#readme",
+  "homepage": "https://github.com/ng-jk/react-native-image-editor-skia#readme",
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USERNAME/react-native-image-editor-skia/issues"
+    "url": "https://github.com/ng-jk/react-native-image-editor-skia/issues"
   },
   "peerDependencies": {
     "@shopify/react-native-skia": ">=2.6.0",
